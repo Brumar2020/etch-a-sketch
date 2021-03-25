@@ -1,4 +1,4 @@
-let container = document.getElementById("container");
+const container = document.querySelector("#container");
 
 function randomize(number){
     var x = Math.floor(Math.random() * 256);
@@ -19,24 +19,18 @@ function blackFont(){
 }
 
 function createGrid(){
-    for (var i = 0; i < 25; i++){
+    for (var i = 0; i < 55; i++){
         var rows = document.createElement("div");
         rows.className = "rows";
-        for (var j = 0; j < 25; j++){
+        for (var j = 0; j < 110; j++){
             var columns = document.createElement("div");
             columns.className = "columns";
             columns.addEventListener("mouseover", 
-            e => e.target.classList.add("mycolor"));
+            e => e.target.classList.add("fill-color"));
             rows.appendChild(columns);
         }
         document.getElementById("container").appendChild(rows);
     }
 }
 
-function fillColor(fill){
-    fill.target.style.backgroundColor = "black";
-    console.log(fill);
-}
-
-let gridCells = document.querySelectorAll
-
+container.appendChild(createGrid());

@@ -6,26 +6,21 @@
     </head>
 
     <body>
+        <div id="system">
+            <div class="instructions">
+                <h1>Etch-A-Sketch</h1>
+            </div>
 
-        <div class="instructions">
-            <h1>Move your mouse over the area that you want to sketch on</h1>
-            <h3>Click the buttons to choose different styles</h3>
-        </div>
-
-        <div class="buttons">
-            <input type="button" id="original" value="Original">
-            <input type="button" id="random" value="Random" onmouseover="randomColor()" 
-                onmouseout="blackFont()">
-            <input type="button" id="gradient" value="Gradient">
-            <input type="button" id="erase" value="Erase">
-        </div>
-
-        <div class="info">
-            <p>Click the button to create the Etch-A-Sketch grid</p>
-        </div>
-
-        <div id="container">
-            <button onclick="createGrid()">Click to make grid</button>
+            <div class="buttons">
+                <input type="button" id="original" value="Black">
+                <input type="button" id="random" value="Random" onmouseover="randomColor()" 
+                    onmouseout="blackFont()">
+                <input type="button" id="gradient" value="Gradient">
+                <input type="button" id="erase" value="Erase">
+                <input type="button" id="clear" value="Clear Grid">
+                <input type="button" id="size" value="Change Grid Size">
+                <div id="container"></div>
+            </div>
         </div>
 
         <script src="script.js"></script>
