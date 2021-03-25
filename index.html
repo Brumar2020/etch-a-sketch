@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Play Etch-A-Sketch!</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <div class="instructions">
+            <h1>Move your mouse over the area that you want to sketch on</h1>
+            <h3>Click the buttons to choose different styles</h3>
+        </div>
+
+        <div class="buttons">
+            <input type="button" id="original" value="Original">
+            <input type="button" id="random" value="Random" onmouseover="randomColor()" 
+                onmouseout="blackFont()">
+            <input type="button" id="gradient" value="Gradient">
+            <input type="button" id="erase" value="Erase">
+        </div>
+
+        <div class="info">
+            <p>Click the button to create the Etch-A-Sketch grid</p>
+        </div>
+
+        <div id="container">
+            <button onclick="createGrid()">Click to make grid</button>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+
+
+</html>

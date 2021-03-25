@@ -1,0 +1,92 @@
+body{
+    display: block;
+    background-color: rgb(133, 133, 133);
+    background-attachment: fixed;
+    background-position: 50%, 100%;
+    background-image: url(https://images.freecreatives.com/wp-content/uploads/2015/03/21a75583eebde777577803534ad4d671.jpg);
+    background-size: cover;
+}
+
+.instructions{
+    display: block;
+    width: fit-content;
+    margin: 0 auto 0 auto;
+    font-family: sans-serif;
+}
+
+h1,
+h3{
+    color: rgb(77, 34, 4);
+}
+
+h3{
+    margin: 3rem auto 0 auto;
+    width: fit-content;
+}
+
+.buttons{
+    display: block;
+    width: fit-content;
+    margin: 3rem auto 0 auto;
+}
+
+#original,
+#random,
+#gradient,
+#erase{
+    background-color: rgb(168, 253, 246);
+    height: 3rem;
+    width: 8rem;
+    font-size: large;
+    border-radius: 2rem;
+    border-style: groove;
+}
+
+#original:hover,
+#random:hover,
+#gradient:hover,
+#erase:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgb(255, 95, 247);
+}
+
+#random:hover{
+}
+
+#gradient:hover{
+
+}
+
+.info{
+    display: block;
+    width: fit-content;
+    margin: 3rem auto 0 auto;
+}
+
+#grid-size{
+    display: block;
+    margin: 0 auto 0 auto;
+    width: fit-content;
+}
+
+.rows{
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.columns{
+    background-color: white;
+    border: black 1px solid;
+    width: 10px;
+    height: 10px;
+    margin 0 auto;
+    margin-top: 0;
+    display: inline-block;
+    float: left;
+}
+
+.mycolor{
+    background-color: black;
+}
