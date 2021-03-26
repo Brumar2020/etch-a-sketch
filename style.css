@@ -1,9 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
 *{
     margin: 0;
     padding: 0;
+    outline: none;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
 body{
     background-attachment: fixed;
@@ -12,7 +13,8 @@ body{
 }
 
 #system{
-    display: block;
+    display: flex;
+    flex-direction: column;
     width: 70%;
     margin: 0 auto 0 auto;
     background-color: rgb(248, 248, 107);
@@ -38,10 +40,10 @@ h1{
     display: block;
     width: fit-content;
     margin: 1rem auto 0 auto;
-    padding-bottom: 26rem;
+    padding-bottom: 2rem;
 }
 
-#original,
+#black,
 #random,
 #gradient,
 #erase,
@@ -53,11 +55,11 @@ h1{
     font-size: 1rem;
     border-radius: 2rem;
     border-style: groove;
-    margin-inline-start: .55rem;
+    margin-inline-start: 2.2rem;
 
 }
 
-#original:hover,
+#black:hover,
 #random:hover,
 #gradient:hover,
 #erase:hover,
@@ -68,34 +70,25 @@ h1{
     box-shadow: 0 0 10px rgb(255, 95, 247);
 }
 
-#gradient:hover{
+#black:focus,
+#random:focus,
+#gradient:focus,
+#erase:focus{
+    background-color: rgb(142, 175, 236);
+}
 
+.wrap{
+    display: block;
+    width: 85%;
+    margin: 0rem auto 0 auto;
 }
 
 #container{
-    display: block;
-    width: 100%;
+    display: grid;
     margin: 2rem auto 0 auto;
+    max-width: 800px;
+    min-height: 800px;
 }
 
-.rows{
-    display: block;
-    width: 85%;
-    float: right;
-    margin: 0 4rem 0 auto;
-}
 
-.columns{
-    background-color: white;
-    width: 7px;
-    height: 7px;
-    margin 0 auto;
-    margin-top: 0;
-    display: inline-block;
-    float: left;
-}
-
-.fill-color{
-    background-color: black;
-}
 
